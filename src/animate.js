@@ -1,4 +1,4 @@
-function animate(scene, camera, renderer, cb) {
+function animate(scene, camera, renderer, cb = () => {}) {
   function animate() {
     requestAnimationFrame(animate);
     cb();
